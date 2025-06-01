@@ -1,4 +1,4 @@
-print("\t\t\t\t\t ~~~~ Imarticus Mega ~~~~")
+print("\t\t\t\t\t ~~~~ My Institute ~~~~")
 print("\t\tPress 1 for Admission enquiry")
 print("\t\tPress 2 for Employee details")
 print("\t\tPress 3 for student details")
@@ -10,10 +10,10 @@ if Choice_1 == 1 :
    New_name = str(input("Enter your name to continue :\t"))
    New_course = str(input("Enter the course name you are interested in :\t"))
 
-   with open('C:\\Users\\MSI1\\OneDrive\\Documents\\python codes\\NewNames.txt', 'a') as file:
+   with open('NewNames.txt', 'a') as file:
       file.write(New_name + '\n')
 
-   with open('C:\\Users\\MSI1\\OneDrive\\Documents\\python codes\\lang.txt', 'r') as file:
+   with open('lang.txt', 'r') as file:
       file_lang = file.read()
 
       course_list = file_lang.split('\n')
@@ -31,7 +31,7 @@ if Choice_1 == 2 :
    Emp_name = str(input("Enter your name :\t"))
    passw = str(input('Enter the password for access :\t'))
 
-   with open('C:\\Users\\MSI1\\OneDrive\\Documents\\python codes\\EmployeeEntry.txt', 'a') as file:
+   with open('EmployeeEntry.txt', 'a') as file:
       file.write(Emp_name + '\n')
 
    if passw == password:
