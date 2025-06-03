@@ -1,0 +1,10 @@
+import base64
+
+def encode_base64(message):
+    mssg_bytes = message.encode('utf-8')
+    base64_bytes = base64.b64encode(mssg_bytes)
+    return base64_bytes.decode('utf-8')
+
+message = input("Enter the message to encode: ")
+encoded = encode_base64(message)
+print('base64 Encoded Message: ', encoded)
