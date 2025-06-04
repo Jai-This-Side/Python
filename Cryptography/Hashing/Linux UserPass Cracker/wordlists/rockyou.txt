@@ -1,0 +1,6 @@
+testlist.txt
+------------
+123456
+password
+Passw@rD
+admin
